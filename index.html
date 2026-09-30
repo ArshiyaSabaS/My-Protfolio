@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arshiya Saba — Aspring Front-End Developer</title>
+  <meta name="description" content="Arshiya Saba — Front-End Developer building responsive, interactive and thoughtful web experiences." />
+
+  <!-- Google Fonts: Playfair Display (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADER / OPENING EXPERIENCE
+       ============================================================ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img src="logo.jpeg" alt="" class="loader__logo" />
+      <p class="loader__name">ARSHIYA SABA</p>
+      <p class="loader__role">ASPIRING FRONT-END DEVELOPER</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SIDEBAR NAVIGATION (desktop) / TOP BAR (mobile)
+       ============================================================ -->
+  <header class="sidebar" id="sidebar">
+    <div class="sidebar__top">
+      <a href="#" class="brand" data-goto="0" aria-label="Go to Home">
+        <span class="brand__mark">AS.</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><button class="nav__link is-active" data-goto="0">HOME<span class="nav__dot"></span></button></li>
+        <li><button class="nav__link" data-goto="1">ABOUT<span class="nav__dot"></span></button></li>
+        <li><button class="nav__link" data-goto="2">WORK<span class="nav__dot"></span></button></li>
+        <li><button class="nav__link" data-goto="3">EXPERIENCE<span class="nav__dot"></span></button></li>
+      </ul>
+
+      <div class="nav__divider" aria-hidden="true"></div>
+
+      <ul class="nav__list nav__list--secondary">
+        <li>
+            <a class="nav__link nav__link--ext"
+              href="Arshiya's Resume.pdf"
+              target="_blank"
+              rel="noopener">
+              VIEW CV <span class="arrow">↗</span>
+            </a>
+        </li>
+        <li><button class="nav__link" data-goto="4">CONTACT<span class="nav__dot"></span></button></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__bottom">
+      <p class="counter" id="counter">01 / 05</p>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN STAGE — full-screen pages
+       ============================================================ -->
+  <main class="stage" id="stage">
+
+    <!-- ======================= HOME ======================= -->
+    <section class="page page--home is-active" id="page-home" data-index="0" aria-label="Home">
+      <img src="Photo.png" alt="Arshiya Saba botanical AS logo" class="home__corner-logo" />
+
+      <div class="home__grid">
+        <div class="home__left">
+          <p class="label reveal" data-reveal="1">ASPIRING FRONT-END DEVELOPER</p>
+
+          <h1 class="home__headline reveal" data-reveal="2">
+            I BUILD DIGITAL<br />EXPERIENCES<br /><em>WITH PURPOSE.</em>
+          </h1>
+
+          <p class="home__name reveal" data-reveal="3">ARSHIYA SABA</p>
+
+          <p class="home__intro reveal" data-reveal="4">
+            I'm Arshiya Saba, Asprinig frontend developer, learning to create
+            responsive, modern, and engaging web experiences.
+          </p>
+
+          <div class="home__cta reveal" data-reveal="5">
+            <button class="btn btn--solid" data-goto="2">VIEW SELECTED WORK</button>
+            <button class="btn btn--ghost" data-goto="4">LET'S CONNECT</button>
+          </div>
+        </div>
+
+        <div class="home__right">
+          <div class="portrait reveal" data-reveal="3">
+            <div class="portrait__frame"></div>
+            <img src="Photo.png"
+                 alt="Illustrated character of Arshiya Saba, a hijabi frontend developer"
+                 class="portrait__img" border-radius="50%"/>
+
+            <!-- Floating tech labels -->
+            <span class="chip chip--html">HTML</span>
+            <span class="chip chip--css">CSS</span>
+            <span class="chip chip--js">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="home__footer-note">© <span class="year"></span> Arshiya Saba — Designed &amp; Built by Arshiya Saba</p>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="page page--about" id="page-about" data-index="1" aria-label="About">
+      <div class="page__inner">
+        <p class="label reveal" data-reveal="1">ABOUT</p>
+        <h2 class="display reveal" data-reveal="2">MORE THAN<br /><em>JUST CODE.</em></h2>
+
+        <div class="about__grid">
+          <div class="about__col">
+            <p class="lead reveal" data-reveal="3">
+              I'm interested in the space between design and development.
+            </p>
+            <p class="reveal" data-reveal="4">
+              With a BCA background and years spent as an Academic Coordinator
+              &amp; Teacher, I bring strong communication, planning and
+              coordination skills into my transition into frontend development.
+              I care about clarity, structure and the small details that make
+              an interface feel considered.
+            </p>
+
+            <h3 class="mini-title reveal" data-reveal="5">EDUCATION</h3>
+            <div class="edu reveal" data-reveal="6">
+              <p class="edu__title">BCA</p>
+              <p class="edu__meta">University of Madras · 2022</p>
+            </div>
+
+            <h3 class="mini-title reveal" data-reveal="7">CURRENT DIRECTION</h3>
+            <p class="reveal" data-reveal="8">Frontend Development</p>
+            <ul class="tags reveal" data-reveal="8">
+              <li>HTML</li><li>CSS</li>
+              <li>Git</li><li>GitHub</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <!-- Certifications: horizontal slider -->
+          <div class="about__col about__col--certs">
+            <h3 class="mini-title reveal" data-reveal="3">CERTIFICATIONS</h3>
+
+            <div class="certs reveal" data-reveal="4">
+              <div class="certs__track" id="certsTrack">
+              
+                <article class="cert">
+                  <p class="cert__year">2025</p>
+                  <h4 class="cert__title"> Getting Started with Microsoft Excel</h4>
+                  <p class="cert__issuer">Coursera</p>
+                </article>
+                <article class="cert">
+                  <p class="cert__year">2021</p>
+                  <h4 class="cert__title">Write Professional Email in English</h4>
+                  <p class="cert__issuer">Coursera</p>
+                </article>
+                <article class="cert">
+                  <p class="cert__year">2022</p>
+                  <h4 class="cert__title">MS Office &amp; Tally</h4>
+                  <p class="cert__issuer">TIET</p>
+                </article>
+                <article class="cert">
+                  <p class="cert__year">2025</p>
+                  <h4 class="cert__title">Data Entry Essentials</h4>
+                  <p class="cert__issuer">dataentrycourse.com</p>
+                </article>
+                <article class="cert">
+                  <p class="cert__year">2025</p>
+                  <h4 class="cert__title">Business Analysis &amp; Process Management</h4>
+                  <p class="cert__issuer">Coursera</p>
+                </article>
+                
+              </div>
+
+              <div class="certs__controls">
+                <button class="certs__btn" id="certsPrev" aria-label="Previous certification">←</button>
+                <button class="certs__btn" id="certsNext" aria-label="Next certification">→</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= WORK ======================= -->
+    <section class="page page--work" id="page-work" data-index="2" aria-label="Work">
+      <div class="work__header">
+        <p class="label reveal" data-reveal="1">SELECTED WORK</p>
+        <h2 class="display display--sm reveal" data-reveal="2">PROJECTS</h2>
+      </div>
+
+      <div class="work__viewport">
+        <div class="work__track" id="workTrack">
+
+          <!-- Project 01 -->
+          <article class="project" data-project="0">
+            <div class="project__media">
+              <img src="Project1.jpeg" alt="Earth 12026 project preview" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">01</p>
+              <h3 class="project__title">EARTH 12026</h3>
+              <p class="project__desc">
+                A futuristic web experience imagining Earth 10,000 years from now.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Loveable</li></ul>
+              <a href="https://screenshot-magic-326.lovable.app" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project" data-project="1">
+            <div class="project__media">
+              <img src="Project2.jpeg" alt="Night Sky Explorer project preview" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">02</p>
+              <h3 class="project__title">NIGHT SKY EXPLORER</h3>
+              <p class="project__desc">
+                An interactive astronomy-themed web experience exploring the night sky, constellations, and celestial events.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+              <a href="https://nightskyexplorer-arshiya.netlify.app/" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- Project 03 — placeholder -->
+          <article class="project" data-project="1">
+            <div class="project__media">
+              <img src="Project3.jpeg" alt="Gift Detective - e commers website" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">03</p>
+              <h3 class="project__title">GIFT DETECTIVE</h3>
+              <p class="project__desc">
+               A modern gift discovery platform combining personalized recommendations with an immersive detective-inspired experience.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <a href="https://e-commersweb-giftdetective-arshiya.netlify.app/" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+
+          <!-- Project 04 — placeholder -->
+          <article class="project" data-project="1">
+            <div class="project__media">
+              <img src="Project4.jpeg" alt="Protfolio Demo" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">04</p>
+              <h3 class="project__title">PROTFOLIO - ARSHIYA SABA</h3>
+              <p class="project__desc">
+                A professional frontend developer portfolio showcasing my skills, experience, and selected web projects.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <a href="https://protfolio-demo-arshiya.netlify.app/" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- Project 05 — placeholder -->
+          <article class="project" data-project="1">
+            <div class="project__media">
+              <img src="Project5.jpeg" alt="Protfolio Demo" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">05</p>
+              <h3 class="project__title">CHAI & CRUMBS - TEA SHOP</h3>
+              <p class="project__desc">
+                A modern tea shop website designed to showcase beverages, snacks, and a warm café-inspired experience.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <a href="https://chai-crumbs-teashowebsite-arshiya.netlify.app/" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- Project 06 — placeholder -->
+          <article class="project" data-project="1">
+            <div class="project__media">
+              <img src="Project6.jpeg" alt="Protfolio Demo" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">06</p>
+              <h3 class="project__title">RECIPE DRIVE</h3>
+              <p class="project__desc">
+                A digital recipe notebook where users can organize recipes into folders and manage their recipe collection.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <a href="https://my-recipe-drive-arshiyasaba.netlify.app/" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+           <!-- Project 07 — placeholder -->
+          <article class="project" data-project="1">
+            <div class="project__media">
+              <img src="Project7.jpeg" alt="Protfolio Demo" />
+            </div>
+            <div class="project__body">
+              <p class="project__num">07</p>
+              <h3 class="project__title">ÉLANÉ</h3>
+              <p class="project__desc">
+                A premium fashion e-commerce experience showcasing contemporary fashion through an elegant, editorial-inspired interface.
+              </p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <a href="https://fashion-website-arshiyasaba.netlify.app/" target="_blank" class="link-arrow">VIEW PROJECT <span>↗</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="work__controls">
+        <button class="certs__btn" id="workPrev" aria-label="Previous project">←</button>
+        <div class="work__dots" id="workDots">
+          <span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        
+        <button class="certs__btn" id="workNext" aria-label="Next project">→</button>
+      </div>
+    </section>
+
+    <!-- ======================= EXPERIENCE ======================= -->
+    <section class="page page--experience" id="page-experience" data-index="3" aria-label="Experience">
+      <div class="page__inner">
+        <p class="label reveal" data-reveal="1">EXPERIENCE</p>
+        <h2 class="display display--sm reveal" data-reveal="2">A PATH<br /><em>IN PROGRESS.</em></h2>
+
+        <div class="timeline">
+          <div class="timeline__row reveal" data-reveal="3">
+            <p class="timeline__years">2017–2021 & <br> 2023–2025</p>
+            <div class="timeline__content">
+              <h3 class="timeline__title">ACADEMIC COORDINATOR &amp; TEACHER</h3>
+              <p class="timeline__org">Green Valley Matriculation School</p>
+              <p class="timeline__note">
+                A professional role built on communication, coordination and
+                care. The strengths developed here — planning, documentation,
+                teamwork and problem solving — now support my transition
+                into frontend development.
+              </p>
+              <ul class="tags">
+                <li>Academic Coordination</li><li>Teacher Coordination</li>
+                <li>Parent Communication</li><li>Event Planning</li>
+                <li>Documentation</li><li>Team Coordination</li>
+                <li>Administrative Support</li><li>Communication</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__row reveal" data-reveal="4">
+            <p class="timeline__years">CURRENT</p>
+            <div class="timeline__content">
+              <h3 class="timeline__title">FRONTEND DEVELOPER</h3>
+              <p class="timeline__org">Self-directed · In progress</p>
+              <p class="timeline__note">Currently focused on:</p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                <li>Bootstrap</li><li>Git</li><li>GitHub</li>
+                <li>Responsive Web Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="page page--contact" id="page-contact" data-index="4" aria-label="Contact">
+      <div class="page__inner">
+        <p class="label label--light reveal" data-reveal="1">CONTACT</p>
+        <h2 class="display display--light reveal" data-reveal="2">
+          LET'S BUILD<br />SOMETHING<br /><em>MEANINGFUL.</em>
+        </h2>
+
+        <p class="contact__intro reveal" data-reveal="3">
+          Have an idea or opportunity? Let's connect.
+        </p>
+
+        <ul class="contact__list reveal" data-reveal="4">
+          <li>
+            <span class="contact__key">EMAIL</span>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arshiyasaba50@gmail.com"
+              target="_blank"
+              class="contact__val">
+                arshiyasaba50@gmail.com
+            </a>
+          </li>
+          <li>
+            <span class="contact__key">GITHUB</span>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact__val">github.com/ArshiyaSabaS</a>
+          </li>
+          <li>
+            <span class="contact__key">LINKEDIN</span>
+            <a href="https://linkedin.com/in/ArshiyaSabaS" target="_blank" rel="noopener" class="contact__val">linkedin.com/in/arshiyasabas</a>
+          </li>
+          <li>
+            <span class="contact__key">CV</span>
+            <a class="nav__link nav__link--ext"
+              href="Arshiya's Resume.pdf"
+              target="_blank"
+              rel="noopener">
+              VIEW CV <span class="arrow">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="footer">
+        <p>© <span class="year"></span> Arshiya Saba</p>
+        <p>Designed &amp; Built by Arshiya Saba</p>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Mobile overlay backdrop (for closing menu) -->
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
